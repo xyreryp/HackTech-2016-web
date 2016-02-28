@@ -34,13 +34,11 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!--loading-->
-    <div id="loader-wrapper">
+<!--     <div id="loader-wrapper">
         <div id="loader"></div>
-
         <div class="loader-section section-left"></div>
         <div class="loader-section section-right"></div>
-
-    </div>
+    </div> -->
 
 </head>
 
@@ -87,6 +85,35 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
+                    <div id="tv_container">
+                        <video width="450" height="400" autoplay="autoplay" loop>
+                            <source src="video/HandShake_demo.mp4" type="video/mp4" />
+                        </video>
+                    </div>
+                    <style>
+                        #tv_container {
+                            width: 460px; /* Adjust TV image width */
+                            height: 400px; /* Adjust TV image height */
+                            position: relative;
+                        }
+                        #tv_container:after {
+                            content: '';
+                            display: block;
+                            background: url('images/iphone6plus_spacegrey.png') no-repeat top left transparent;
+                            width: 100%;
+                            height: 100%;
+                            left: 0px;
+                            top: 0px;
+                            position: absolute;
+                            z-index: 10;
+                        }
+                        #tv_container video {
+                            position: absolute;
+                            top: -12px; /* Adjust top position */
+                            left: 130px; /* Adjust left position */
+                            z-index: 5;
+                        }
+                    </style>
                     <img class="img-responsive" src="img/icon-handshake.png">
                     <div class="intro-text">
                         <span class="name">HandShake</span>
