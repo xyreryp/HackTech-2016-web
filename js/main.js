@@ -13,10 +13,13 @@ Enjoy responsibly!
 */
 
 $(document).ready(function() {
-	
+	console.log("ready");
+	$('body').addClass('loaded');
+	$('h1').css('color','#222222');
 	setTimeout(function(){
-		$('body').addClass('loaded');
-		$('h1').css('color','#222222');
-	}, 3000);
+		console.log("timeout");
+		$('body').toggleClass('loaded');
+	}, 15000);
+
 	
 });
