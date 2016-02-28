@@ -28,7 +28,7 @@ a.active {
     color: #99CCFF;
 }
 
-h1,
+/*h1,
 h2,
 h3,
 h4,
@@ -37,7 +37,7 @@ h6 {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-}
+}*/
 #loader-wrapper {
     position: fixed;
     top: 0;
@@ -248,7 +248,7 @@ header img {
 }
 
 header .intro-text .name {
-    display: block;
+    margin-left: 480px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-size: 2em;

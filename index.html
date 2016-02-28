@@ -86,39 +86,44 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div id="tv_container">
-                        <video width="450" height="400" autoplay="autoplay" loop>
+                        <video width="304" height="540" autoplay="autoplay" loop>
                             <source src="video/HandShake_demo.mp4" type="video/mp4" />
                         </video>
-                    </div>
-                    <style>
+
+                        <img id="phone_pic" src="img/iphone6plus_spacegrey.png">
+
+                        <style>
                         #tv_container {
-                            width: 460px; /* Adjust TV image width */
-                            height: 400px; /* Adjust TV image height */
+                            width: 740px; /* Adjust TV image width */
+                            height: 740px; /* Adjust TV image height */
+                            position: relative;
                             position: relative;
                         }
-                        #tv_container:after {
-                            content: '';
-                            display: block;
-                            background: url('images/iphone6plus_spacegrey.png') no-repeat top left transparent;
-                            width: 100%;
-                            height: 100%;
-                            left: 0px;
-                            top: 0px;
+                        
+
+                        #phone_pic {
+                            width: 90%;
+                            height: 90%;
+                            left: 0;
+                            top: 0;
                             position: absolute;
-                            z-index: 10;
+                            z-index: 1;
                         }
+
+
                         #tv_container video {
-                            position: absolute;
-                            top: -12px; /* Adjust top position */
-                            left: 130px; /* Adjust left position */
-                            z-index: 5;
+                            width: 270px; /* Adjust TV image width */
+                            height: 480px; /* Adjust TV image height */
+                            position: relative;
+                            top: 90px; /* Adjust top position */
+                            left: -37px; /* Adjust left position */
+                            z-index:2;
                         }
                     </style>
+                    </div>
                     <img class="img-responsive" src="img/icon-handshake.png">
                     <div class="intro-text">
                         <span class="name">HandShake</span>
-                        <hr class="star-light">
-                        <span class="skills">Meet new friends, exchange name cards.</span>
                     </div>
                 </div>
             </div>
@@ -126,30 +131,49 @@
     </header>
 
     <!-- About Section -->
-    <section class="success" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
+<section class="success" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <img class="img-circle";"center-text" src="img/Facebook-icon.png" alt="Generic placeholder image" width="140" height="140">
+                <h2>Step 1</h2>
+                <p>Connect with Facebook</p>
+            </div>
+
+            <div class="col-lg-4">
+                <img class="img-circle" src="img/friendicon.png" alt="Generic placeholder image" width="140" height="140">
+                <h2>Step 2</h2>
+                <p>Meet someone new!</p>
+            </div>
+            <div class="col-lg-4">
+                <img class="img-circle" src="img/shakephone_icon.png" alt="Generic placeholder image" width="140" height="140">
+                <h2>Step 3</h2>
+                <p>Shake!</p>
+            </div>
+        </div>
+    </div>
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <a href="https://github.com/sharukhhasan/Hacktech-2016" class="btn btn-lg btn-outline">
+                    <i class="fa fa-download"></i> Download HandShake
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--             <div class="row">
+                <div class="col-lg-12 text-center"> -->
                     <!-- <h2>About</h2> -->
                     <!-- <hr class="star-light"> -->
-                </div>
-            </div>
-            <div class="row">
+<!--                 </div>
+            </div> -->
+<!--             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
                     <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
                 </div>
                 <div class="col-lg-4">
                     <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
-                </div>
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="https://github.com/sharukhhasan/Hacktech-2016" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Download HandShake
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
+                </div> -->
+<!-- Footer -->
     <footer class="text-center">
         <div class="footer-below">
             <div class="container">
